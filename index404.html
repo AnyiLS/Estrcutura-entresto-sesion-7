@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estructura, sesión 7 Entresto Juego</title>
+
+		<link rel="stylesheet" href="./css/styles404-1.css" />
+		<link rel="stylesheet" href="./css/styles404.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada404.jpg"
+				alt="Portada"
+				class="cover-image" />
+
+			<!-- barco -->
+			<div class="barco">
+				<img src="./imagenes/cerebro1.png" alt="" />
+			</div>
+
+			<div class="opcion"></div>
+
+			<!-- Respuestas correcta y incorrecta -->
+			<div class="correcta" style="display: none">
+				<img src="./imagenes/respuesta-2.png" alt="" />
+			</div>
+
+			<div class="openModal"></div>
+			<!-- modal -->
+			<div class="modal" style="display: none; height: 100%">
+				<img src="./imagenes/pop-2.jpg" class="ancho" id="image" />
+				<div class="closeModal"></div>
+			</div>
+
+			<div class="openModal1"></div>
+			<!-- modal -->
+			<div class="modal1" style="display: none; height: 100%">
+				<img src="./imagenes/pop-2.jpg" class="ancho" id="image" />
+				<div class="closeModal1"></div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="./js/gameFunction.js"></script>
+		<script src="./js/sonidos.js"></script>
+		<script src="./js/scripts.js"></script>
+		<script src="./js/script404.js"></script>
+	</body>
+</html>
