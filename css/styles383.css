@@ -53,6 +53,14 @@ body {
 	right: 2%;
 }
 
+.boto {
+	position: absolute;
+    width: 1%;
+    height: 3%;
+    top: 29%;
+    right: 31.5%;
+	background: #e95780;
+}
 
 /* Definimos la animación para el resplandor */
 @keyframes pulseGlow {
