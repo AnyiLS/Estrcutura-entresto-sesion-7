@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	showBoxes()
 	// Opcion incorrecta (A)
 	$('.openModal').on('click', () => {
 		errorSound();
@@ -32,7 +33,7 @@ $(document).ready(function () {
 
 	// Seleccion de la respuesta correcta
 	$(".opcion").on("click", () => {
-		// handleShowCurrentBox(0);
+		handleShowCurrentBox(2);
 		handleOptionCorrectShow('.correcta');
 		boxSound();
 		handleSaveCorrectQuestion(3)

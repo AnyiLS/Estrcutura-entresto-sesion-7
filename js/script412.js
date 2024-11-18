@@ -1,10 +1,10 @@
 $(document).ready(function () {
 	showBoxes();
-	const responses = JSON.parse(localStorage.getItem('responses'))
-	if (responses.includes(9)) {
-		$('.caja9').show();
-	}
-	$('.caja8').hide();
+	// const responses = JSON.parse(localStorage.getItem('responses'))
+	// if (responses.includes(9)) {
+	// 	$('.caja9').show();
+	// }
+	// $('.caja8').hide();
 
 	// modal 1
 	$('.openModal').on('click', () => {
@@ -71,7 +71,7 @@ $(document).ready(function () {
 	
 	// Seleccion de la respuesta correcta
 	$(".opcion").on("click", () => {
-		// handleShowCurrentBox(8)
+		handleShowCurrentBox(9)
 		handleOptionCorrectShow('.correcta');
 		boxSound();
 		handleSaveCorrectQuestion(10)

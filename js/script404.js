@@ -1,7 +1,10 @@
 $(document).ready(function () {
+
+	showBoxes()
 	// Opcion incorrecta (A)
 	$('.openModal').on('click', () => {
 		errorSound();
+		
 
 		setTimeout(() => {
 			$('.modal').fadeIn();
@@ -32,10 +35,11 @@ $(document).ready(function () {
 
 	// Seleccion de la respuesta correcta
 	$(".opcion").on("click", () => {
-		// handleShowCurrentBox(0);
+		handleShowCurrentBox(1);
 		handleOptionCorrectShow('.correcta');
 		boxSound();
 		handleSaveCorrectQuestion(2)
+		showBoxes()
 
 		setTimeout(() => {
 			handleChangeView(405);
